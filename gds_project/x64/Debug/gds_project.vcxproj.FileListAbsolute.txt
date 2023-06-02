@@ -1,0 +1,4 @@
+C:\Users\pikas\Documents\Source\gds_project\x64\Debug\gds_project.exe
+C:\Users\pikas\Documents\Source\cpp_gdstk\gds_project\x64\Debug\gds_project.vcxproj.CopyComplete
+C:\Users\pikas\Documents\Source\cpp_gdstk\gds_project\x64\Debug\gds_project.exe
+C:\Users\pikas\Documents\Source\cpp_gdstk\gds_project\x64\Debug\zlibd1.dll

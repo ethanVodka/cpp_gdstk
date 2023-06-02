@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a3a59546-ed55-4326-915a-8c79faac0e55}</ProjectGuid>
+    <RootNamespace>gdstk</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)INCLUDE\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)INCLUDE\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="src\gdstk.h" />
+    <ClInclude Include="src\gdstk\allocator.h" />
+    <ClInclude Include="src\gdstk\array.h" />
+    <ClInclude Include="src\gdstk\cell.h" />
+    <ClInclude Include="src\gdstk\clipperlib\clipper.hpp" />
+    <ClInclude Include="src\gdstk\clipper_tools.h" />
+    <ClInclude Include="src\gdstk\curve.h" />
+    <ClInclude Include="src\gdstk\flexpath.h" />
+    <ClInclude Include="src\gdstk\font.h" />
+    <ClInclude Include="src\gdstk\gdsii.h" />
+    <ClInclude Include="src\gdstk\gdswriter.h" />
+    <ClInclude Include="src\gdstk\label.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\geom_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\io_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\libqhull_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\mem_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\merge_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\poly_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\qhull_ra.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\qset_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\random_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\stat_r.h" />
+    <ClInclude Include="src\gdstk\libqhull_r\user_r.h" />
+    <ClInclude Include="src\gdstk\library.h" />
+    <ClInclude Include="src\gdstk\map.h" />
+    <ClInclude Include="src\gdstk\oasis.h" />
+    <ClInclude Include="src\gdstk\pathcommon.h" />
+    <ClInclude Include="src\gdstk\polygon.h" />
+    <ClInclude Include="src\gdstk\property.h" />
+    <ClInclude Include="src\gdstk\rawcell.h" />
+    <ClInclude Include="src\gdstk\reference.h" />
+    <ClInclude Include="src\gdstk\repetition.h" />
+    <ClInclude Include="src\gdstk\robustpath.h" />
+    <ClInclude Include="src\gdstk\set.h" />
+    <ClInclude Include="src\gdstk\sort.h" />
+    <ClInclude Include="src\gdstk\style.h" />
+    <ClInclude Include="src\gdstk\utils.h" />
+    <ClInclude Include="src\gdstk\vec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gdstk\cell.cpp" />
+    <ClCompile Include="src\gdstk\clipperlib\clipper.cpp" />
+    <ClCompile Include="src\gdstk\clipper_tools.cpp" />
+    <ClCompile Include="src\gdstk\curve.cpp" />
+    <ClCompile Include="src\gdstk\flexpath.cpp" />
+    <ClCompile Include="src\gdstk\gdsii.cpp" />
+    <ClCompile Include="src\gdstk\label.cpp" />
+    <ClCompile Include="src\gdstk\libqhull_r\geom2_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\geom_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\global_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\io_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\libqhull_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\mem_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\merge_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\poly2_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\poly_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\qset_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\random_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\rboxlib_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\stat_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\usermem_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\userprintf_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\userprintf_rbox_r.c" />
+    <ClCompile Include="src\gdstk\libqhull_r\user_r.c" />
+    <ClCompile Include="src\gdstk\library.cpp" />
+    <ClCompile Include="src\gdstk\oasis.cpp" />
+    <ClCompile Include="src\gdstk\polygon.cpp" />
+    <ClCompile Include="src\gdstk\property.cpp" />
+    <ClCompile Include="src\gdstk\rawcell.cpp" />
+    <ClCompile Include="src\gdstk\reference.cpp" />
+    <ClCompile Include="src\gdstk\repetition.cpp" />
+    <ClCompile Include="src\gdstk\robustpath.cpp" />
+    <ClCompile Include="src\gdstk\style.cpp" />
+    <ClCompile Include="src\gdstk\utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
